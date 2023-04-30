@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import HospitalsCards from '../shared/HospitalsCards'
 import SearchInput from '../shared/SearchInput'
-import { Box } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import { hospitals } from '../../asset/hospitals'
 
 function Home() {
@@ -23,6 +23,7 @@ function Home() {
       <Box w={['100%', '100%', '100%', '4xl']} mx={'auto'} mb={'5'}>
         <SearchInput onChange={handleSearchValue} placeHolder={'Search for Hospitals'}  />
       </Box>
+      <Heading size={'lg'} ml={'2'}>Hospitals</Heading>
       <HospitalsCards hospitals={filterHospital} />
     </Box>
   )

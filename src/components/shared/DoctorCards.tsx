@@ -21,9 +21,9 @@ function DoctorCards() {
               image={image}
               height={'25rem'}
               child={<CardFooter pt="1" pb={'2'} px="2">
-                  <Button variant='solid' colorScheme='blue' w={'100%'}>
-                    Book Now
-                  </Button>
+                <Button variant='solid' colorScheme='blue' w={'100%'}>
+                  Book Now
+                </Button>
               </CardFooter>}
               noOfLine={2}
             />

@@ -1,4 +1,4 @@
-import { Card, CardBody, Stack, Image, Heading, Text } from '@chakra-ui/react'
+import { Card, CardBody, Stack, Image, Heading, Text, CardProps } from '@chakra-ui/react'
 
 type Props = {
   image?: string,
@@ -8,7 +8,7 @@ type Props = {
   child?: React.ReactElement | string
   fallbackDimension?: number,
   noOfLine?: number
-}
+} & Partial<CardProps>
 
 function CardBox({ image, name, description, body = null, child, fallbackDimension, noOfLine = 3, ...others }: Props) {
 

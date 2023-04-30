@@ -10,7 +10,8 @@ function Hospital() {
       <Flex justifyContent={'center'}>
         {state?.image && <Image
           src={state?.image}
-          maxW={'3xl'}
+          maxW={['auto', 'auto', 'auto','3xl']}
+          objectFit={'cover'}
           borderRadius='lg'
           fallbackSrc={'https://via.placeholder.com/500'}
         />}

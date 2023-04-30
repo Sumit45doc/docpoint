@@ -8,7 +8,9 @@ function Router() {
     <Routes>
       <Route path='/' element={<Header />}>
         <Route index element={<Home />} />
-        <Route path="hospital" element={<Hospital />} />
+        <Route path="hospital" element={<Hospital />} >
+        </Route>
+        <Route path="hospital/:id/doctors" element={<>Coming soon</>} />
       </Route>
     </Routes>
   )

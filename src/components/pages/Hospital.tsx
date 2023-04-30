@@ -22,6 +22,7 @@ function Hospital() {
         </Heading>
         <Text>{state?.description}</Text>
       </Box>}
+      <Heading size={'md'}>Available Doctors</Heading>
       <DoctorCards/>
     </Box>
   )

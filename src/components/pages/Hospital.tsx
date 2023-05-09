@@ -8,13 +8,13 @@ function Hospital() {
   return (
     <Box p={'2'}>
       <Flex justifyContent={'center'}>
-        {state?.image && <Image
-          src={state?.image}
-          maxW={['auto', 'auto', 'auto','3xl']}
+        <Image
+          src={state?.image ?? 'https://via.placeholder.com/500'}
+          maxW={['auto', 'auto', 'auto', '3xl']}
           objectFit={'cover'}
           borderRadius='lg'
           fallbackSrc={'https://via.placeholder.com/500'}
-        />}
+        />
       </Flex>
       {state?.description && <Box my={'3'}>
         <Heading size={'md'}>
@@ -23,7 +23,7 @@ function Hospital() {
         <Text>{state?.description}</Text>
       </Box>}
       <Heading size={'md'}>Available Doctors</Heading>
-      <DoctorCards/>
+      <DoctorCards />
     </Box>
   )
 }

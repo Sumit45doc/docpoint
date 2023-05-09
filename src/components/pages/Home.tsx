@@ -19,7 +19,7 @@ function Home() {
   }
 
   return (
-    <Box>
+    <Box p={'2'}>
       <Box w={['100%', '100%', '100%', '4xl']} mx={'auto'} mb={'5'}>
         <SearchInput onChange={handleSearchValue} placeHolder={'Search for Hospitals'}  />
       </Box>

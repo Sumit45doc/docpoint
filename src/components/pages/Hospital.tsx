@@ -1,6 +1,7 @@
-import { Text, Image, Flex, Heading, Box } from '@chakra-ui/react'
+import { Text, Image, Flex, Heading, Box, ButtonGroup, Button } from '@chakra-ui/react'
 import { useLocation } from 'react-router-dom'
 import DoctorCards from '../shared/DoctorCards'
+import SchedularTabs from '../shared/SchedularTabs'
 
 function Hospital() {
   const { state } = useLocation()
@@ -23,7 +24,7 @@ function Hospital() {
         <Text>{state?.description}</Text>
       </Box>}
       <Heading size={'md'}>Available Doctors</Heading>
-      <DoctorCards />
+      <SchedularTabs />
     </Box>
   )
 }

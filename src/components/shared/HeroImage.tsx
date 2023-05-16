@@ -11,6 +11,7 @@ function HeroImage({ imageUrl }: Props) {
             objectFit={'cover'}
             borderRadius='lg'
             fallbackSrc={'https://via.placeholder.com/500'}
+            overflow={'hidden'}
         />
     )
 }

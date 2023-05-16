@@ -15,9 +15,12 @@
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
     "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.4.0",
     "framer-motion": "^10.12.4",
     "react": "^18.2.0",
+    "react-calendar": "^4.2.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.0"
   },
   "devDependencies": {

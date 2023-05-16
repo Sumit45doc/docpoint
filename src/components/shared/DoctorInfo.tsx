@@ -1,4 +1,4 @@
-import { Box, Heading, Table, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react"
+import { Box, Heading, Table, TableContainer, Tbody, Td, Tr } from "@chakra-ui/react"
 import { DoctorSchema } from "./DoctorCards"
 import { StarIcon } from "@chakra-ui/icons"
 

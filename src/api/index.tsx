@@ -3,9 +3,9 @@ import axios from 'axios';
 const API = axios.create({ baseURL: 'https://main--stupendous-cannoli-bd8985.netlify.app' });
 
 API.interceptors.request.use((req) => {
-  if (localStorage && localStorage.getItem('user')) {
-    req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('user')).token}`;
-  }
+  // if (localStorage && localStorage.getItem('user')) {
+  //   req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('user')).token}`;
+  // }
 
   return req;
 });

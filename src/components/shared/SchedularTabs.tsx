@@ -1,4 +1,4 @@
-import { ButtonGroup, Button, Box } from '@chakra-ui/react'
+import { ButtonGroup, Button } from '@chakra-ui/react'
 import { useState } from 'react'
 import DoctorCards from './DoctorCards'
 import 'react-calendar/dist/Calendar.css';
@@ -41,6 +41,8 @@ function SchedularTabs() {
                     Select Date
                 </Button>
             </ButtonGroup>
+            {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+            {/*  @ts-ignore: Unreachable code error */}
             {showCalender && <Calendar onChange={handleDateChange} value={date} />}
             <DoctorCards />
         </>

@@ -1,13 +1,11 @@
 import { Button, Card, CardBody, CardHeader, Heading, Input } from '@chakra-ui/react'
 import { useState } from 'react'
-import { SignUp as SignUpInput, signIn, signUp } from '../../api';
-import { useNavigate } from 'react-router-dom';
+import { SignUp as SignUpInput, signUp } from '../../api';
 
 function SignUp() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate()
 
     const handleSignUp = () => {
         if (!email || !password || !username) {

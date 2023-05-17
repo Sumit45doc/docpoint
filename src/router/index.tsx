@@ -1,10 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from '../components/pages/Home';
 import Header from '../components/layout/Header/Header';
-import Hospital from '../components/pages/Hospital';
 import React from 'react'
 
-
+const Home = React.lazy(() => import('../components/pages/Home'))
+const Hospital = React.lazy(() => import('../components/pages/Hospital'))
 const Doctor = React.lazy(() => import('../components/pages/Doctor'))
 const SignIn = React.lazy(() => import('../components/pages/SignIn'))
 const SignUp = React.lazy(() => import('../components/pages/SignUp'))

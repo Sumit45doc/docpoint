@@ -1,11 +1,10 @@
 import { ReactElement, createContext, useState } from 'react';
 
 type UserValue = {
-  username: null;
-  email: null;
-  password: null;
-  id: null;
-  role: null;
+  username: string;
+  email: string;
+  id: string;
+  role: string;
 };
 
 type ContextType = {

@@ -10,8 +10,8 @@ import { useContext } from 'react'
 import { userContext } from '../../../context/UserProvider'
 
 function Header() {
-    const { user } = useContext(userContext)
-    console.log(user)
+    const { user, setUser } = useContext(userContext)
+
     const navigate = useNavigate()
     const handleSignin = () => {
         navigate('/signin')
@@ -28,9 +28,9 @@ function Header() {
                 <Text fontSize={'3xl'}>
                     DocPoint
                 </Text>
-                <Menu>
-                    <MenuButton>
-                        <Icon as={CgProfile} boxSize={7} mr={'2'} />
+                <Menu >
+                    <MenuButton mr={'2'} >
+                        {user && <Box as={'span'}> Hi, {user.username}</Box>}  <Icon as={CgProfile} boxSize={7} mr={'2'} />
                     </MenuButton>
                     <MenuList>
                         {
@@ -43,6 +43,7 @@ function Header() {
                                 <>
                                     <MenuItem>Profile</MenuItem>
                                     <MenuItem>My Booking</MenuItem>
+                                    <MenuItem onClick={() => setUser(null)}>Log out</MenuItem>
                                 </>
                         }
                     </MenuList>

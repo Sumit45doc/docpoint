@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://main--stupendous-cannoli-bd8985.netlify.app' });
+const API = axios.create({ baseURL: 'https://nice-pink-python-cuff.cyclic.app' });
 
 API.interceptors.request.use((req) => {
   // if (localStorage && localStorage.getItem('user')) {

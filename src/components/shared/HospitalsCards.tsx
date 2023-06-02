@@ -8,6 +8,7 @@ type Props = {
         id: number;
         name: string;
         description: string;
+        image: string
     }[]
 }
 
@@ -16,11 +17,11 @@ function HospitalsCards({ hospitals }: Props) {
     return (
         <Grid templateColumns={'repeat(auto-fit, minmax(300px, 1fr))'} columnGap={'3'} rowGap={'4'} justifyItems={'center'}>
             {hospitals.map((hospital) => {
-                const image = './assets/hospital_' + generateRandomNumber(10, 1) + '.jpg'
-                console.log(hospital, image)
+                // const image = './assets/hospital_' + generateRandomNumber(10, 1) + '.jpg'
+                // console.log(hospital, image)
                 return (<GridItem key={hospital.id}>
-                    <Link to={'hospital'} state={{ ...hospital, image }} >
-                        <CardBox name={hospital.name} description={hospital.description} image={image} height={'25rem'} />
+                    <Link to={'hospital'} state={{ ...hospital }} >
+                        <CardBox name={hospital.name} description={hospital.description} image={hospital.image} height={'25rem'} />
                     </Link>
                 </GridItem>)
             })}

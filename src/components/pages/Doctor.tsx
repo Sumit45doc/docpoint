@@ -16,9 +16,6 @@ function Doctor() {
             </Flex>
             <DoctorInfo info={state} />
             <br />
-            <Box>
-                <span>Slot</span>
-            </Box>
             <Button onClick={() => setIsBooked(prev => !prev)}>{isBooked ? 'Appointment successful' : "Book Appointment"}</Button>
         </Box>
     )

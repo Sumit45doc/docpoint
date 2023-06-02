@@ -1,7 +1,7 @@
 import CardBox from './CardBox'
 import { Grid, GridItem } from '@chakra-ui/react'
 import { Link } from "react-router-dom";
-import { generateRandomNumber } from '../../utils';
+// import { generateRandomNumber } from '../../utils';
 
 type Props = {
     hospitals: {

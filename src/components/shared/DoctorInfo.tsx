@@ -2,14 +2,13 @@ import { Box, Heading, Table, TableContainer, Tbody, Td, Tr } from "@chakra-ui/r
 import { DoctorSchema } from "./DoctorCards"
 import { StarIcon } from "@chakra-ui/icons"
 import { memo } from 'react'
+import TimeSlots from "./TimeSlots"
 
 type Props = {
     info: DoctorSchema
 }
 function DoctorInfo({ info }: Props) {
-    const index = Math.floor(Math.random() * (4 - 0) + 0);
-    const randomSlot = ["10:30Am", "11:30pm", "9:30Am", "4:00PM", "3:30PM"]
-    const slotTime = randomSlot[index]
+
     return (
         <Box>
             <Heading size="md" >Description</Heading>
@@ -50,10 +49,10 @@ function DoctorInfo({ info }: Props) {
                         </Tr>
                         <Tr>
                             <Td>
-                                Time Slot
+                                Select Time Slot
                             </Td>
                             <Td>
-                                {slotTime}
+                                <TimeSlots />
                             </Td>
                         </Tr>
                     </Tbody>
